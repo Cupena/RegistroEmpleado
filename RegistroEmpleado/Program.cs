@@ -27,7 +27,20 @@ int main()
     int op = 0, i = 0;
     do
     {
+        Console.WriteLine($"Registro #{i + 1}");
         op = menu();
+        switch (op)
+        {
+            case 1:
+                agregarEmpleado(i++);
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+        }
     } while (op != 4);
     return 0;
 }
