@@ -15,12 +15,24 @@ void agregarEmpleado(int pos)
     Console.WriteLine("Registro guardado satisfactoriamente");
     Console.ResetColor();
 }
+int menu()
+{
+    Console.Write("1. Agregar \n2. Mostrar\n3. Eliminar\n4. Salir\nDigite su opcion: ");
+    int op = int.Parse(Console.ReadLine()!);
+    return op;
+}
 
 int main()
 {
     int op = 0, i = 0;
+    do
+    {
+        op = menu();
+    } while (op != 4);
     return 0;
 }
+
+main();
 struct Empleado
 {
     public string nombres;
