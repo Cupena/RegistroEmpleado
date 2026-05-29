@@ -15,6 +15,12 @@ void agregarEmpleado(int pos)
     Console.WriteLine("Registro guardado satisfactoriamente");
     Console.ResetColor();
 }
+
+int main()
+{
+    int op = 0, i = 0;
+    return 0;
+}
 struct Empleado
 {
     public string nombres;
